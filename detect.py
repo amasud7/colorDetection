@@ -1,7 +1,9 @@
 # this file holds the function that determines the HSV boundaries for detecting specific colors
 import numpy as np
-import cv2
 
+
+# not using this function anymore, just for reference
+"""
 # pass in array of bgr values for specific color
 def find_hsv(color):
     # limiting numbers to 0 - 255 using uint8 and adding [[]] to make 3x3 numpy array (this is needed for cvtColor() to convert to HSV)
@@ -18,6 +20,44 @@ def find_hsv(color):
     upper_lim = np.array([hsv_val[0][0][0] + 10, 255, 255], np.uint8)
 
     return lower_lim, upper_lim
+"""
+
+# can add more specific colors later (right now just colors on rubix cube)
+def red():
+    lower1 = np.array([0, 190, 190], np.uint8)
+    upper1 = np.array([10, 255, 255], np.uint8)
+    lower2 = np.array([150, 190, 190], np.uint8)
+    upper2 = np.array([180, 255, 255], np.uint8)
+    return lower1, upper1, lower2, upper2
+
+def orange():
+    lower = np.array([11, 170, 170], np.uint8)
+    upper = np.array([24, 255, 255], np.uint8)
+    return lower, upper
+
+def yellow():
+    lower = np.array([25, 150, 150], np.uint8)
+    upper = np.array([39, 255, 255], np.uint8)
+    return lower, upper
+
+def green():
+    lower = np.array([40, 150, 150], np.uint8)
+    upper = np.array([89, 255, 255], np.uint8)
+    return lower, upper
+
+def blue():
+    lower = np.array([90, 50, 50], np.uint8)
+    upper = np.array([149, 255, 255], np.uint8)
+    return lower, upper
+
+# fix white values
+def white():
+    lower = np.array([0, 0, 178], np.uint8)
+    upper = np.array([255, 10, 255], np.uint8)
+    return lower, upper
+
+
+
 
 
 
