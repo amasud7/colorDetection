@@ -22,21 +22,22 @@ def find_hsv(color):
     return lower_lim, upper_lim
 """
 
-# can add more specific colors later (right now just colors on rubix cube)
+# can add more specific colors later 
+# these are hsv values [hue, saturation, value]
 def red():
-    lower1 = np.array([0, 190, 190], np.uint8)
-    upper1 = np.array([10, 255, 255], np.uint8)
-    lower2 = np.array([150, 190, 190], np.uint8)
+    lower1 = np.array([0, 250, 250], np.uint8)
+    upper1 = np.array([4, 255, 255], np.uint8)
+    lower2 = np.array([150, 195, 195], np.uint8)
     upper2 = np.array([180, 255, 255], np.uint8)
     return lower1, upper1, lower2, upper2
 
 def orange():
-    lower = np.array([11, 170, 170], np.uint8)
+    lower = np.array([5, 220, 220], np.uint8)
     upper = np.array([24, 255, 255], np.uint8)
     return lower, upper
 
 def yellow():
-    lower = np.array([25, 150, 150], np.uint8)
+    lower = np.array([25, 170, 170], np.uint8)
     upper = np.array([39, 255, 255], np.uint8)
     return lower, upper
 
