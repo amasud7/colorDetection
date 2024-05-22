@@ -2,6 +2,12 @@ Color detection program.
 Libraries and Skills: Python, OpenCV, Pillow, numpy
 Can detect single colors in frame as well as multiple colors in frame at the same time. 
 
+Video Example:
+
+https://github.com/amasud7/colorDetection/assets/67660166/a633270a-c23b-40a4-8c7a-1470adeb54d5
+
+
+
 Single Colors:
 
 <img width="456" alt="Screen Shot 2024-05-21 at 11 41 01 PM" src="https://github.com/amasud7/colorDetection/assets/67660166/fcaafd21-6760-4404-ab23-c99fbe261ca2">
